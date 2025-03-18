@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(188, 112, 112);
+}
+
+.pig-face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(217, 115, 174);
+    border-radius: 50%;
+    border: 5px solid black;
+}
+.ear {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    background-color: rgb(102, 62, 69);
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.left-ear {
+    top: -20px;
+    left: 20px;
+}
+
+.right-ear {
+    top: -20px;
+    right: 20px;
+}
+.eye {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.left-eye {
+    top: 70px;
+    left: 60px;
+}
+
+.right-eye {
+    top: 70px;
+    right: 60px;
+}
+.eye::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mouth {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    background-color: #d11313;
+    border-radius: 30px;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid black;
+}
+.nose {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    top: 20px;
+}
+.left-nose {
+    left: 20px;
+}
+.right-nose {
+    right: 20px;
+} 
